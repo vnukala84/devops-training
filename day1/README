@@ -1,1 +1,22 @@
+How to set java path in Ubuntu
 
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+
+export PATH=$PATH:$JAVA_HOME/bin
+
+ubuntu@ubuntu-2204:/usr/bin$ vi ~/.bashrc
+
+source ~/.bashrc
+
+------------------
+Install Maven on unbuntu
+
+ sudo apt install maven
+
+ubuntu@ubuntu-2204:~$ mvn -version
+Apache Maven 3.6.3
+Maven home: /usr/share/maven
+Java version: 17.0.2, vendor: Private Build, runtime: /usr/lib/jvm/java-17-openjdk-amd64
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.15.0-25-generic", arch: "amd64", family: "unix"
+ubuntu@ubuntu-2204:~$
